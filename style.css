@@ -1,0 +1,1269 @@
+/* =====================================================
+   ADEELA SALEEM - PROFESSIONAL PORTFOLIO
+   Shared CSS for all pages
+===================================================== */
+
+
+/* =====================================================
+   1. GOOGLE FONT
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* =====================================================
+   2. BASIC RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8fafc;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+/* =====================================================
+   3. HEADER / NAVBAR
+===================================================== */
+
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #2563eb;
+}
+
+.navbar a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 2px;
+
+    background: #2563eb;
+
+    transition: 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+
+/* =====================================================
+   4. LANDING / INDEX PAGE
+===================================================== */
+
+.landing-page {
+    min-height: calc(100vh - 220px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 70px 20px;
+
+    background:
+        linear-gradient(135deg,
+            #f8fafc 0%,
+            #eef4ff 100%);
+}
+
+.landing-content {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+}
+
+
+/* Logo Circle */
+
+.landing-logo {
+    width: 80px;
+    height: 80px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    box-shadow:
+        0 12px 30px rgba(37, 99, 235, 0.20);
+}
+
+
+/* Name */
+
+.landing-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+
+    color: #111827;
+
+    margin-bottom: 8px;
+}
+
+
+/* Main Title */
+
+.landing-content h2 {
+    font-size: 21px;
+    font-weight: 500;
+
+    color: #2563eb;
+
+    margin-bottom: 3px;
+}
+
+.landing-description {
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #4b5563;
+}
+
+.landing-intro {
+    max-width: 600px;
+
+    margin: 18px auto 40px;
+
+    font-size: 15px;
+
+    color: #6b7280;
+}
+
+
+/* =====================================================
+   5. LANDING PAGE MENU
+===================================================== */
+
+.portfolio-menu {
+    display: flex;
+    flex-direction: column;
+
+    gap: 13px;
+
+    text-align: left;
+}
+
+.menu-item {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    padding: 17px 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-3px);
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.menu-number {
+    min-width: 45px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #2563eb;
+}
+
+.menu-item h3 {
+    font-size: 17px;
+    font-weight: 600;
+
+    color: #111827;
+
+    margin-bottom: 2px;
+}
+
+.menu-item p {
+    font-size: 12px;
+
+    color: #6b7280;
+}
+
+.menu-arrow {
+    margin-left: auto;
+
+    font-size: 21px;
+
+    color: #2563eb;
+
+    transition: 0.3s ease;
+}
+
+.menu-item:hover .menu-arrow {
+    transform: translateX(6px);
+}
+
+
+/* =====================================================
+   6. GENERAL PAGE SECTIONS
+===================================================== */
+
+.section {
+    padding: 80px 0;
+    min-height: calc(100vh - 150px);
+}
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.section-heading p {
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #2563eb;
+
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+/* =====================================================
+   7. HOME PAGE
+===================================================== */
+
+.hero {
+    padding: 100px 0;
+
+    background:
+        linear-gradient(135deg,
+            #f8fafc,
+            #eef4ff);
+}
+
+.hero-container {
+    display: grid;
+
+    grid-template-columns: 1.3fr 0.7fr;
+
+    align-items: center;
+
+    gap: 60px;
+}
+
+.small-heading {
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #2563eb;
+
+    margin-bottom: 12px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    line-height: 1.2;
+
+    color: #111827;
+
+    margin-bottom: 10px;
+}
+
+.hero-content h1 span {
+    color: #2563eb;
+}
+
+.hero-content h2 {
+    font-size: 23px;
+    font-weight: 500;
+
+    color: #4b5563;
+
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    max-width: 600px;
+
+    font-size: 16px;
+
+    color: #6b7280;
+
+    margin-bottom: 30px;
+}
+
+
+/* Buttons */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.primary-button {
+    background: #2563eb;
+    color: white;
+}
+
+.primary-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    border: 1px solid #2563eb;
+
+    color: #2563eb;
+
+    background: white;
+}
+
+.secondary-button:hover {
+    background: #2563eb;
+    color: white;
+}
+
+
+/* Home Card */
+
+.hero-card {
+    background: white;
+
+    padding: 40px 25px;
+
+    text-align: center;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+.profile-circle {
+    width: 110px;
+    height: 110px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.hero-card h3 {
+    font-size: 20px;
+
+    color: #111827;
+
+    margin-bottom: 5px;
+}
+
+.hero-card p {
+    font-size: 14px;
+
+    color: #6b7280;
+}
+
+.card-line {
+    width: 50px;
+    height: 2px;
+
+    background: #2563eb;
+
+    margin: 18px auto;
+}
+
+
+/* =====================================================
+   8. ABOUT PAGE
+===================================================== */
+
+.about-container {
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+.about-text h3 {
+    font-size: 25px;
+
+    color: #111827;
+
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 15px;
+
+    color: #6b7280;
+
+    margin-bottom: 18px;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.info-box {
+    padding: 20px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+}
+
+.info-box span {
+    display: block;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    color: #2563eb;
+
+    margin-bottom: 5px;
+}
+
+.info-box strong {
+    font-size: 15px;
+
+    color: #111827;
+}
+
+
+/* =====================================================
+   9. SKILLS PAGE
+===================================================== */
+
+.skills-section {
+    padding: 80px 0;
+}
+
+.skills-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.skill-card {
+    background: white;
+
+    padding: 25px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.skill-top {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.skill-top h3 {
+    font-size: 17px;
+
+    color: #111827;
+}
+
+.skill-top span {
+    font-size: 13px;
+
+    color: #2563eb;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 7px;
+
+    background: #e5e7eb;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+
+    background: #2563eb;
+
+    border-radius: 20px;
+}
+
+.html-progress {
+    width: 85%;
+}
+
+.css-progress {
+    width: 75%;
+}
+
+.excel-progress {
+    width: 80%;
+}
+
+
+/* =====================================================
+   10. EDUCATION PAGE
+===================================================== */
+
+.education-card {
+    max-width: 850px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.education-icon {
+    min-width: 90px;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    padding: 10px;
+}
+
+.education-icon img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.education-content h3 {
+    font-size: 21px;
+
+    color: #111827;
+
+    margin-bottom: 7px;
+}
+
+.education-content p {
+    font-size: 14px;
+
+    color: #6b7280;
+
+    margin-bottom: 4px;
+}
+
+
+/* =====================================================
+   11. PROJECTS
+===================================================== */
+
+.projects-section {
+    padding: 80px 0;
+}
+
+.empty-project {
+    max-width: 700px;
+
+    margin: auto;
+
+    padding: 45px 25px;
+
+    text-align: center;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+}
+
+.empty-project h3 {
+    font-size: 21px;
+
+    color: #111827;
+
+    margin-bottom: 10px;
+}
+
+.empty-project p {
+    font-size: 14px;
+
+    color: #6b7280;
+}
+
+
+/* =====================================================
+   12. CONTACT PAGE
+===================================================== */
+
+.contact-container {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 50px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.contact-item {
+    padding: 20px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+}
+
+.contact-item span {
+    display: block;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    color: #2563eb;
+
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    font-size: 14px;
+
+    color: #374151;
+
+    word-break: break-word;
+}
+
+
+/* Contact Form */
+
+.contact-form {
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    margin-bottom: 15px;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #2563eb;
+}
+
+.contact-form textarea {
+    min-height: 130px;
+
+    resize: vertical;
+}
+
+.contact-form button {
+    border: none;
+
+    cursor: pointer;
+
+    font-family: inherit;
+}
+
+
+/* =====================================================
+   13. FOOTER
+===================================================== */
+
+.footer {
+    padding: 45px 20px;
+
+    background: #111827;
+
+    color: white;
+
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 21px;
+
+    margin-bottom: 7px;
+}
+
+.footer p {
+    font-size: 13px;
+
+    color: #9ca3af;
+}
+
+.footer-line {
+    width: 60px;
+    height: 2px;
+
+    background: #2563eb;
+
+    margin: 20px auto;
+}
+
+.footer .copyright {
+    font-size: 12px;
+
+    color: #6b7280;
+}
+
+
+/* =====================================================
+   14. RESPONSIVE DESIGN - TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .nav-container {
+        flex-direction: column;
+
+        padding: 18px 0;
+
+        gap: 15px;
+    }
+
+    .navbar {
+        gap: 20px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =====================================================
+   15. RESPONSIVE DESIGN - MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .container {
+        width: 92%;
+    }
+
+    /* Navbar */
+
+    .navbar {
+        gap: 13px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+
+    /* Landing */
+
+    .landing-page {
+        padding: 50px 15px;
+    }
+
+    .landing-logo {
+        width: 70px;
+        height: 70px;
+
+        font-size: 18px;
+    }
+
+    .landing-content h1 {
+        font-size: 36px;
+    }
+
+    .landing-content h2 {
+        font-size: 18px;
+    }
+
+    .landing-intro {
+        font-size: 14px;
+    }
+
+    .menu-item {
+        padding: 15px;
+    }
+
+
+    /* General */
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+
+    /* Home */
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* Skills */
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Education */
+
+    .education-card {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    /* Contact */
+
+    .contact-form {
+        padding: 20px;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        padding: 35px 15px;
+    }
+}
+
+/* =========================
+   COMPANY PAGE
+========================= */
+
+.company-hero {
+    background: linear-gradient(135deg, #f8fafc, #eef4ff);
+}
+
+.company-intro {
+    max-width: 950px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.company-logo {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.company-text h3 {
+    font-size: 25px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.company-text p {
+    font-size: 15px;
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+.company-section {
+    background: #f8fafc;
+}
+
+.company-details {
+    max-width: 950px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.company-box {
+    padding: 22px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.company-box span,
+.company-contact span {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #2563eb;
+    margin-bottom: 6px;
+}
+
+.company-box strong {
+    font-size: 15px;
+    color: #111827;
+}
+
+.mission-container {
+    max-width: 950px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.mission-card {
+    padding: 30px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+.mission-card h3 {
+    font-size: 21px;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.mission-card p {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    padding: 25px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #2563eb;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.service-card h3 {
+    font-size: 17px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.company-contact {
+    max-width: 850px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.company-contact>div {
+    padding: 25px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.company-contact p {
+    font-size: 14px;
+    color: #374151;
+    word-break: break-word;
+}
+
+
+/* Company Page Responsive */
+
+@media (max-width: 900px) {
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .company-contact {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .company-intro {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .company-logo {
+        width: 120px;
+        height: 120px;
+        font-size: 35px;
+    }
+
+    .company-details {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+}
